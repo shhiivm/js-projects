@@ -1,9 +1,10 @@
 var weight, height, bmi, data;
 
 function calculate() {
-  userName = document.getElementById('name').value;
-  weight = document.getElementById("weight").value;
-  height = document.getElementById("height").value;
+  const userName = document.querySelector('#name').value;
+  const weight = document.getElementById("weight").value;
+  const height = document.getElementById("height").value;
+
 
   heigth = 0.01 * height;
   bmi = (weight / (heigth * heigth)).toFixed(1);
@@ -17,7 +18,7 @@ function calculate() {
     data = `${userName}'s BMI is ${bmi} and You are Obese`;
   }
 
-  if (weight < 1 || height < 1) {
+  if (weight < 1 || height < 1 || bmi <1) {
     document.getElementById("results").innerHTML = "Please enter valid Data";
   } else {
     document.getElementById("results").innerHTML = data;
