@@ -1,10 +1,9 @@
 var weight, height, bmi, data;
 
 function calculate() {
-  const userName = document.querySelector('#name').value;
-  const weight = document.getElementById("weight").value;
-  const height = document.getElementById("height").value;
-
+  userName = document.getElementById('name').value;
+  weight = document.getElementById("weight").value;
+  height = document.getElementById("height").value;
 
   heigth = 0.01 * height;
   bmi = (weight / (heigth * heigth)).toFixed(1);
