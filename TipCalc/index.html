@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <style>
+        body{
+            text-align: center;
+
+        }
+        
+        .heading{
+            border-bottom:2px solid black ;
+            background-color: aquamarine;
+        }
+        .innerSec{
+            background-color: rgb(251, 243, 238);
+        }
+        form{
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Tip Calculator</h1>
+        </div>
+        <div class="innerSec">
+            <form action="">
+                <div id="billAmount">
+                    <p>Your Bill Amount</p>
+                    $<input type="number" name="amount" id="amount">
+                </div>
+                <div id="service">
+                    <p>How Was your service</p>
+                    <select name="" id="serviceQuality">
+                        <option disabled selected value="">--Choose an option--</option>
+                        <option value="0">Bad - No tip</option>
+                        <option value="0.05">5%- was okay</option>
+                        <option value="0.1">10% - good</option>
+                        <option value="0.15">15%- awesome</option>
+                    </select>
+                </div>
+                <div id="billShare">
+                    <p>Share Bill With</p>
+                    <input type="number" name="people" id="peoples"> members
+                </div>
+            </form>
+            <button type="button" id="btn" onclick="tipCalculate()">Calculate</button>
+        </div>
+        <p id="result">Your payable amount</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
