@@ -1,7 +1,7 @@
 function tipCalculate(){
-    const amount = document.getElementById('amount').value;
-    const service = document.getElementById('serviceQuality').value;
-    const members = document.getElementById('peoples').value;
+    const amount = document.querySelector('#amount').value;
+    const service = document.querySelector('#serviceQuality').value;
+    const members = document.querySelector('#peoples').value;
 
     var tip  = amount*service;
     var text;
